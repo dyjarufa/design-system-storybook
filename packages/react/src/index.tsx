@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react' // extrai ou herda quais propriedades um componente pode ter
+import { ComponentProps } from 'react' // extrai ou herda quais propriedades que um componente pode ter
 
 import { styled } from './styles'
 
