@@ -5,14 +5,13 @@
   ],
   "dependencies": {
     "@stitches/react": "^1.2.8",
+    "phosphor-react": "^1.4.1",
     "polished": "^4.2.2"
   },
-
   "scripts": {
     "dev": "turbo run dev --parallel",
     "build": "turbo run build"
   },
-  
   "devDependencies": {
     "turbo": "^1.6.3"
   }
