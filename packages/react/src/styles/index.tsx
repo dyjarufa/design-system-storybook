@@ -1,3 +1,5 @@
+import { createStitches, defaultThemeMap } from '@stitches/react'
+
 import {
   colors,
   fonts,
@@ -7,7 +9,6 @@ import {
   radii,
   space,
 } from '@ignite-ui/tokens'
-import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const {
   styled,
@@ -19,7 +20,9 @@ export const {
   createTheme,
   config,
 } = createStitches({
-  // marcar propriedades do css | defaultThemeMap me permite usar space do stitches não apenas para o padding, mas para o width e height
+  // mapear propriedades do css para algum tipo de token |
+  // defaultThemeMap me permite usar por exemplo o space do stitches, não apenas para o padding, mas para o width e height
+
   themeMap: {
     ...defaultThemeMap,
     height: 'space',
