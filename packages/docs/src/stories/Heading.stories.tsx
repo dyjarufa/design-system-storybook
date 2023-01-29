@@ -5,8 +5,16 @@ export default {
   title: 'Typography/Heading',
   component: Heading,
   args: {
-    children:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda excepturi, laboriosam quas omnis explicabo ipsa provident, rem sint eaque enim nisi cum autem illo quia eum aspernatur blanditiis a adipisci?',
+    children: 'Custom Title',
+    size: 'md',
+  },
+  argTypes: {
+    size: {
+      options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
   },
 } as Meta<HeadingProps>
 
@@ -14,8 +22,8 @@ export const Primary: StoryObj<HeadingProps> = {}
 
 export const CustomTag: StoryObj<HeadingProps> = {
   args: {
-    children: 'Strong Text',
-    as: 'strong',
+    children: 'H1 Heading',
+    as: 'h1',
   },
   parameters: {
     docs: {

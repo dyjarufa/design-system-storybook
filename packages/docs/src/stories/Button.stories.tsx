@@ -9,6 +9,34 @@ export default {
   component: Button,
   args: {
     children: 'Send',
+    variant: 'primary', // valor padrão
+    size: 'md', // valor padrão
+    disabled: false,
+  },
+  // * Log de ação do component | sera criado uma aba action no storybook com o log da action que eu executar
+  argTypes: {
+    // * Quais opções possíveis de variação para cada propriedade do componente
+    variant: {
+      options: ['primary', 'secondary', 'tertiary'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    // * estado do botão
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    onClick: {
+      action: 'click',
+    },
   },
 } as Meta<ButtonProps>
 

@@ -2,14 +2,17 @@ import type { StoryObj, Meta } from '@storybook/react' // ? importar tipagem do 
 import { Box, BoxProps, Text } from '@ignite-ui/react'
 
 export default {
-  title: 'SurfaceBox',
+  title: 'Surfaces/Box',
   component: Box,
   args: {
-    children: (
-      <>
-        <Text>testing element box</Text>
-      </>
-    ),
+    children: <Text>testing element box</Text>,
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null, // ocultar propriedades para não ser administrado pelo usuário no canvas
+      },
+    },
   },
 } as Meta<BoxProps>
 
