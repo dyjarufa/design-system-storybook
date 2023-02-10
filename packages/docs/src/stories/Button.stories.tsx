@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react' // ? importar tipagem do storybook
-import { Button, ButtonProps } from '@ignite-ui/react'
+import { Button, ButtonProps } from '@ignite-ui-jd/react'
 import { ArrowRight } from 'phosphor-react'
 
 // * Definição global do componente Button
