@@ -1,0 +1,2 @@
+import{A as t}from"./index.a9a3665d.js";import"./index.df7fdabe.js";import"./iframe.5ddd6a6d.js";import"./index.3a2caf95.js";import"./jsx-runtime.6a2e4f45.js";const p={title:"Data Display/Avatar",component:t,args:{src:"https://github.com/dyjarufa.png",alt:"Jady Rufino"},argTypes:{src:{control:{type:"text"}}}},c={},m={args:{src:void 0}},e=["Primary","WithFallback"];export{c as Primary,m as WithFallback,e as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.03f52ee8.js.map
