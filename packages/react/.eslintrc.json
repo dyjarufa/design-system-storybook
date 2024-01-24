@@ -1,3 +1,6 @@
 {
-  "extends": "@ignite-ui-jd/eslint-config"
+  "extends": "@ignite-ui-jd/eslint-config",
+  "rules": {
+    "comma-dangle": ["always"]
+  }
 }
