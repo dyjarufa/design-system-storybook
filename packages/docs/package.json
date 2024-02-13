@@ -1,38 +1,42 @@
 {
-  "name": "@ignite-ui-jd/docs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "docs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "start-storybook -p 6006",
-    "build": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.20.5",
-    "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.13",
-    "@storybook/addon-interactions": "^6.5.13",
-    "@storybook/addon-links": "^6.5.13",
-    "@storybook/builder-vite": "^0.2.5",
-    "@storybook/react": "^6.5.13",
-    "@storybook/storybook-deployer": "^2.8.16",
-    "@storybook/testing-library": "^0.0.13",
-    "@vitejs/plugin-react": "^2.2.0",
-    "babel-loader": "^8.3.0",
-    "vite": "^3.2.4"
+    "build-vite": "tsc && vite build",
+    "build": "storybook build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "dev": "storybook dev -p 6006"
   },
   "dependencies": {
-    "@ignite-ui-jd/eslint-config": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "@ignite-ui-jd/react": "*",
     "@ignite-ui-jd/tokens": "*",
-    "@ignite-ui-jd/ts-config": "*",
-    "@storybook/addon-a11y": "^6.5.16",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@ignite-ui-jd/eslint-config": "*"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.14",
+    "@storybook/addon-interactions": "^7.6.14",
+    "@storybook/addon-links": "^7.6.14",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.14",
+    "@storybook/react": "^7.6.14",
+    "@storybook/react-vite": "^7.6.14",
+    "@storybook/test": "^7.6.14",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-storybook": "^0.6.15",
+    "storybook": "^7.6.14",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0"
   }
 }
