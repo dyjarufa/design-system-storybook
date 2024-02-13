@@ -11,11 +11,13 @@
     "dev": "storybook dev -p 6006"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@ignite-ui-jd/eslint-config": "*",
     "@ignite-ui-jd/react": "*",
     "@ignite-ui-jd/tokens": "*",
-    "@ignite-ui-jd/eslint-config": "*"
+    "@ignite-ui-jd/ts-config": "*",
+    "polished": "^4.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.14",
