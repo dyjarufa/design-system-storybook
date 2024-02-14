@@ -9,7 +9,7 @@ export * from './components/Checkbox'
 export * from './components/MultiStep'
 
 export * from './styles' // dar acesso a todas variáveis do meu design system mesmo que opte por não usar
-
+/* 
 // import { ComponentProps } from 'react' // extrai ou herda quais propriedades que um componente pode ter
 
 // import { styled } from './styles'
@@ -47,3 +47,4 @@ export * from './styles' // dar acesso a todas variáveis do meu design system m
 // })
 
 // export type ButtonProps = ComponentProps<typeof Button>
+ */

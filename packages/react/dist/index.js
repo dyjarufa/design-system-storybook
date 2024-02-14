@@ -588,7 +588,7 @@ var {
 } = q({
   themeMap: __spreadProps(__spreadValues({}, n), {
     height: "space",
-    width: "space "
+    width: "space"
   }),
   theme: {
     colors,
@@ -954,7 +954,7 @@ function Avatar2(props) {
 Avatar2.displayName = "Avatar";
 
 // src/components/Button.tsx
-var Button = re("button", {
+var Button = styled("button", {
   all: "unset",
   borderRadius: "$sm",
   fontSize: "$sm",
@@ -1030,7 +1030,7 @@ var Button = re("button", {
 });
 
 // src/components/TextInput/index.tsx
-var import_react10 = require("react");
+var import_react9 = require("react");
 
 // src/components/TextInput/styles.ts
 var TextInputContainer = re("div", {
@@ -1086,7 +1086,7 @@ var Input = re("input", {
 
 // src/components/TextInput/index.tsx
 var import_jsx_runtime2 = require("react/jsx-runtime");
-var TextInput = (0, import_react10.forwardRef)(
+var TextInput = (0, import_react9.forwardRef)(
   (_a, ref) => {
     var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
     return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, {
@@ -1135,6 +1135,7 @@ TextArea.displayName = "Textarea";
 // src/components/Checkbox/styles.ts
 var Checkbox = __toESM(require("@radix-ui/react-checkbox"));
 var CheckboxContainer = styled(Checkbox.Root, {
+  all: "unset",
   width: "$6",
   height: "$6",
   backgroundColor: "$gray900",
@@ -1172,8 +1173,8 @@ var slideOut = keyframes({
 });
 var CheckboxIndicator = styled(Checkbox.Indicator, {
   color: "$white",
-  height: "$4",
   width: "$4",
+  height: "$4",
   '&[data-state="checked"]': {
     animation: `${slideIn} 200ms ease-out`
   },
@@ -1194,7 +1195,6 @@ function Checkbox2(props) {
     })
   }));
 }
-Checkbox2.displayName = "Checkbox";
 
 // src/components/MultiStep/styles.ts
 var MultiStepContainer = styled("div", {});

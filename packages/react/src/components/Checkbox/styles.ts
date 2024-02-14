@@ -2,7 +2,7 @@ import * as Checkbox from '@radix-ui/react-checkbox'
 import { styled, keyframes } from '../../styles'
 
 export const CheckboxContainer = styled(Checkbox.Root, {
-  // all: 'unset', // zerar todo estilização pré-definida
+  all: 'unset', // zerar todo estilização pré-definida
   width: '$6',
   height: '$6',
   backgroundColor: '$gray900',
@@ -47,8 +47,8 @@ const slideOut = keyframes({
 // exibe o conteúdo com base se o checkbox estiver selecionado ou não
 export const CheckboxIndicator = styled(Checkbox.Indicator, {
   color: '$white',
-  height: '$4',
   width: '$4',
+  height: '$4',
 
   '&[data-state="checked"]': {
     animation: `${slideIn} 200ms ease-out`,
