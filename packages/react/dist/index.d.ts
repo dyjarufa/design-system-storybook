@@ -722,7 +722,7 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
     };
 }, {
     height: "space";
-    width: "space ";
+    width: "space";
     gap: "space";
     gridGap: "space";
     columnGap: "space";
@@ -1274,6 +1274,9 @@ declare const CheckboxContainer: _stitches_react_types_styled_component.StyledCo
 interface CheckboxProps extends ComponentProps<typeof CheckboxContainer> {
 }
 declare function Checkbox(props: CheckboxProps): react_jsx_runtime.JSX.Element;
+declare namespace Checkbox {
+    var displayName: string;
+}
 
 interface MultiStepProps {
     size: number;

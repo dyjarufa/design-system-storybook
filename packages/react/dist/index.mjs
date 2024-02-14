@@ -983,6 +983,7 @@ var Button = styled("button", {
     size: "md"
   }
 });
+Button.displayName = "Button";
 
 // src/components/TextInput/index.tsx
 import { forwardRef as forwardRef4 } from "react";
@@ -1150,6 +1151,7 @@ function Checkbox2(props) {
     })
   }));
 }
+Checkbox2.displayName = "Checkbox";
 
 // src/components/MultiStep/styles.ts
 var MultiStepContainer = styled("div", {});

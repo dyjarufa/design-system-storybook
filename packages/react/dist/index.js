@@ -1028,6 +1028,7 @@ var Button = styled("button", {
     size: "md"
   }
 });
+Button.displayName = "Button";
 
 // src/components/TextInput/index.tsx
 var import_react9 = require("react");
@@ -1195,6 +1196,7 @@ function Checkbox2(props) {
     })
   }));
 }
+Checkbox2.displayName = "Checkbox";
 
 // src/components/MultiStep/styles.ts
 var MultiStepContainer = styled("div", {});
